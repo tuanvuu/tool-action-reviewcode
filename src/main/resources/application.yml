@@ -1,0 +1,7 @@
+spring:
+  application:
+   name: tool-action-reviewcode
+  http-client:
+    gitlab:
+      url: ${GITLAB_URL}
+      token: ${GITLAB_TOKEN}
