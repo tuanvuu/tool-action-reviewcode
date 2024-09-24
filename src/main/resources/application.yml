@@ -1,7 +1,10 @@
 spring:
   application:
    name: tool-action-reviewcode
-  http-client:
+  client:
     gitlab:
-      url: ${GITLAB_URL}
-      token: ${GITLAB_TOKEN}
+      url: ${GITLAB_URL:https://gitlab.com}
+      token: ${GITLAB_TOKEN:asd}
+
+server:
+  port: 8080

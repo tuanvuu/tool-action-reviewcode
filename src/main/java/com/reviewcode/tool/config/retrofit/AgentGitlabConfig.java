@@ -15,7 +15,8 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 @RequiredArgsConstructor
 public class AgentGitlabConfig {
-    @Value("${application.http-client.gitlab.url}")
+
+    @Value("${spring.client.gitlab.url}")
     private String baseUrl;
 
     @Bean(name = "httpClientGitlab")
